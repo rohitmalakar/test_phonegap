@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+
+<div id="home" data-role="page" data-theme="a">
+
+    <div data-role="header" class="header">
+        Tourist Information Center Basantapur
+    </div> <!-- /header -->
+    
+    <div data-role="content">
+        <h3>Famous Place to visit</h3>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-filter="true">
+            <li><a href="#hanuman-dhoka">Hanuman Dhoka Durbar Square</a></li>
+            <li><a href="#kumari-bahal">Courtyard of Kumari Bahal</a></li>
+            <li><a href="#">Nine Storey Palace</a></li>
+            <li><a href="#">Kastamandap Temple</a></li>
+            <li><a href="#">Hanuman Dhoka Museum</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div data-role="content">
+        <h3>Resturant and Lodge near by</h3>
+    </div>        
+    <div data-role="content">
+        <ul data-role="listview" data-filter="true">
+            <li><a href="#himalayan-java">Himalayan Java</a></li>
+            <li><a href="#">Grasshopper</a></li>
+            <li><a href="#">Durbar Square Cafe</a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed" class="footer">
+        
+    </div>
+</div> <!-- /home page -->
+
+<div id="himalayan-java" data-role="page">
+<div class="header" data-role="header">
+    Himalayan Java
+</div>
+<div data-role="content">
+<img src="http://www.himalayanjava.com/images/himalayan-java-logo.png" alt="">
+   <p>
+   Himalayan Java was established in 1999 as the first specialty coffee house in Nepal. With a strong core belief of socially responsible entrepreneurship, our mission is to promote the fledgling Nepalese coffee industry by investing in people from producer to consumer, and to promote locally grown coffee to the international market.
+   </p> 
+</div>
+</div>
+<div id="kumari-bahal" data-role="page">
+    <div class="header" data-role="header">
+        Kumari bahal
+    </div>
+    <div data-role="content">
+        <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Kathmandu_Darbar0607_KumariGhar.JPG/220px-Kathmandu_Darbar0607_KumariGhar.JPG" alt="">
+        <p>
+            Jayaprakash Malla, the last Malla king to rule Kathmandu, built a temple for Kumari and Durga in her virginal state. The temple was named Kumari Bahal and was structured like a typical Newari vihara. In his house resides the Kumari, a girl who is revered as the living goddess. He also made a chariot for Kumari and in the courtyard had detailed terra cotta tiles of that time laid down.
+        </p>
+    </div>
+</div> <!-- /kumaribahal -->
+
+
+<div id="hanuman-dhoka" data-role="page">
+    <div data-role="header" class="header">
+        Hanuman Dhoka Durbar Square
+    </div> <!-- /header -->
+    <div data-role="content">
+    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Basntapur_By_Mahalaxmi_silwal_1.JPG/220px-Basntapur_By_Mahalaxmi_silwal_1.JPG" alt="">
+    <p>
+        Kathmandu's Durbar Square is the site of the Hanuman Dhoka Palace Complex, which was the royal Nepalese residence until the 19th century and where important ceremonies, such as the coronation of the Nepalese monarch, still take place today. The palace is decorated with elaborately-carved wooden windows and panels and houses the King Tribhuwan Memorial Museum and the Mahendra Museum. It is possible to visit the state rooms inside the palace.</p>
+    <p>
+    Time and again the temples and the palaces in the square have gone through reconstruction after being damaged by natural causes or neglect. Presently there are less than ten quadrangles in the square. The temples are being preserved as national heritage sites and the palace is being used as a museum. Only a few parts of the palace are open for visitors and the Taleju temples are only open for people of Hindu and Buddhist faiths.
+    </p>
+    <p>
+    At the southern end of Durbar Square is one of the most curious attractions in Nepal, the Kumari Chowk. This gilded cage contains the Raj Kumari, a girl chosen through an ancient and mystical selection process to become the human incarnation of the Hindu mother goddess, Durga. She is worshiped during religious festivals and makes public appearances at other times for a fee paid to her guards.
+        </p>
+    </div>    
+</div>
+<script> 
+    $('a').each(function() {
+        $(this).attr('data-transition','flip'); 
+    });
+</script>
+</body>
+</html>
